@@ -1,0 +1,249 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>tests&#x2f;snapshots&#x2f;test_redaction__foo_bar_range_from.snap | Insta</title>
+<script>
+  const SNAPSHOT_FILES = {};
+</script>
+<script src="listing.js"></script>
+<style type=text/css>
+  body { font-family: sans-serif; }
+  nav { float: right; }
+  nav ul { list-style: none; padding: 0; margin: 0; }
+  nav ul li { font-size: 13px; padding: 0; margin: 0; }
+  nav a.snapshot-changed { font-weight: bold; }
+  table.diff {
+    background: #eee;
+  }
+  table.diff { font-family: monospace; }
+  table.diff pre { margin: 0; }
+  table.diff td.old, table.diff td.new { min-width: 30px; text-align: right; background: #bbb; }
+  table.diff td.old { color: red; }
+  table.diff td.new { color: green; }
+  table.diff tr.divider { text-align: center; }
+  table.diff .change-equal td pre:before { content: " "; }
+  table.diff .change-insert td pre:before { content: "+"; }
+  table.diff .change-delete td pre:before { content: "-"; }
+</style>
+<header>
+  Insta Snapshots
+</header>
+<nav>
+  <ul></ul>
+</nav>
+<script>
+  (function() {
+    const nav = document.querySelector("nav ul");
+    Object.values(SNAPSHOT_FILES).forEach((value) => {
+      const el = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = value.file;
+      a.innerText = value.name;
+      if (value.changed) {
+        a.className = "snapshot-changed";
+      }
+      el.appendChild(a);
+      nav.appendChild(el);
+    });
+  })();
+</script>
+<main>
+  
+  <h1>tests&#x2f;snapshots&#x2f;test_redaction__foo_bar_range_from.snap</h1>
+  <dl>
+    <dt>Module name</dt>
+    <dd>test_redaction</dd>
+    <dt>Snapshot name</dt>
+    <dd>foo_bar_range_from</dd>
+    <dt>Source</dt>
+    <dd>
+      tests&#x2f;test_redaction.rs:26
+    </dd>
+  </dl>
+  
+    <h3>Diff</h3>
+    <table class="diff">
+      <tr>
+        <th class="old">Old</th>
+        <th class="new">New</th>
+        <th class="line">Snapshot</th>
+      </tr>
+    
+      
+      
+        <tr class="change-equal">
+          <td class="old">1</td>
+          <td class="new">1</td>
+          <td class="line"><pre>    selectors: [
+</pre></td>
+        </tr>
+      
+        <tr class="change-equal">
+          <td class="old">2</td>
+          <td class="new">2</td>
+          <td class="line"><pre>        [
+</pre></td>
+        </tr>
+      
+        <tr class="change-equal">
+          <td class="old">3</td>
+          <td class="new">3</td>
+          <td class="line"><pre>            Key(
+</pre></td>
+        </tr>
+      
+        <tr class="change-delete">
+          <td class="old">4</td>
+          <td class="new"></td>
+          <td class="line"><pre>                &quot;foo&quot;,
+</pre></td>
+        </tr>
+      
+        <tr class="change-insert">
+          <td class="old"></td>
+          <td class="new">4</td>
+          <td class="line"><pre>                &quot;aoo&quot;,
+</pre></td>
+        </tr>
+      
+        <tr class="change-equal">
+          <td class="old">5</td>
+          <td class="new">5</td>
+          <td class="line"><pre>            ),
+</pre></td>
+        </tr>
+      
+        <tr class="change-equal">
+          <td class="old">6</td>
+          <td class="new">6</td>
+          <td class="line"><pre>            Key(
+</pre></td>
+        </tr>
+      
+        <tr class="change-equal">
+          <td class="old">7</td>
+          <td class="new">7</td>
+          <td class="line"><pre>                &quot;bar&quot;,
+</pre></td>
+        </tr>
+      
+    
+      
+        <tr class="divider"><td colspan=3>…</td></tr>
+      
+      
+        <tr class="change-equal">
+          <td class="old">12</td>
+          <td class="new">12</td>
+          <td class="line"><pre>                ),
+</pre></td>
+        </tr>
+      
+        <tr class="change-equal">
+          <td class="old">13</td>
+          <td class="new">13</td>
+          <td class="line"><pre>                None,
+</pre></td>
+        </tr>
+      
+        <tr class="change-equal">
+          <td class="old">14</td>
+          <td class="new">14</td>
+          <td class="line"><pre>            ),
+</pre></td>
+        </tr>
+      
+        <tr class="change-insert">
+          <td class="old"></td>
+          <td class="new">15</td>
+          <td class="line"><pre>            Range(
+</pre></td>
+        </tr>
+      
+        <tr class="change-insert">
+          <td class="old"></td>
+          <td class="new">16</td>
+          <td class="line"><pre>                None,
+</pre></td>
+        </tr>
+      
+        <tr class="change-insert">
+          <td class="old"></td>
+          <td class="new">17</td>
+          <td class="line"><pre>                Some(
+</pre></td>
+        </tr>
+      
+        <tr class="change-insert">
+          <td class="old"></td>
+          <td class="new">18</td>
+          <td class="line"><pre>                    4,
+</pre></td>
+        </tr>
+      
+        <tr class="change-insert">
+          <td class="old"></td>
+          <td class="new">19</td>
+          <td class="line"><pre>                ),
+</pre></td>
+        </tr>
+      
+        <tr class="change-insert">
+          <td class="old"></td>
+          <td class="new">20</td>
+          <td class="line"><pre>            ),
+</pre></td>
+        </tr>
+      
+        <tr class="change-equal">
+          <td class="old">15</td>
+          <td class="new">21</td>
+          <td class="line"><pre>        ],
+</pre></td>
+        </tr>
+      
+        <tr class="change-equal">
+          <td class="old">16</td>
+          <td class="new">22</td>
+          <td class="line"><pre>    ],
+</pre></td>
+        </tr>
+      
+        <tr class="change-equal">
+          <td class="old">17</td>
+          <td class="new">23</td>
+          <td class="line"><pre>}</pre></td>
+        </tr>
+      
+    
+  
+  </table>
+  <h3>Snapshot</h3>
+  <pre>Selector {
+    selectors: [
+        [
+            Key(
+                &quot;aoo&quot;,
+            ),
+            Key(
+                &quot;bar&quot;,
+            ),
+            Range(
+                Some(
+                    10,
+                ),
+                None,
+            ),
+            Range(
+                None,
+                Some(
+                    4,
+                ),
+            ),
+        ],
+    ],
+}</pre>
+
+</main>
+<footer>
+  Generated by <a href=https://insta.rs/>Insta</a> 1.13.0
+</footer>
