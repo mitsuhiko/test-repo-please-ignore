@@ -1,0 +1,35 @@
+name: ❅ Flaky Test
+description: A flaky test in CI
+title: "[Flaky CI]: "
+labels: ["Type: CI Flakiness"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Flakiness Type
+      description: What are you observing
+      options:
+        - Timeout
+        - Visual Snapshot
+        - Jest Snapshot
+        - Insta Snapshot
+        - Assertion failure
+        - Other / Unknown
+    validations:
+      required: true
+  - type: input
+    id: job-name
+    attributes:
+      label: Name of Job
+      placeholder: acceptance / acceptance (3.8.12, 0)
+      description: name of job as reported in the status report
+    validations:
+      required: true
+  - type: input
+    id: test-run-link
+    attributes:
+      label: Link to Test RUN
+      placeholder: https://github.com/getsentry/sentry/runs/5582673807
+      description: paste the URL to a test run showing the issue
+    validations:
+      required: true
