@@ -26,9 +26,17 @@ body:
     validations:
       required: true
   - type: input
+    id: test-name
+    attributes:
+      label: Name of Test
+      placeholder: tests/js/spec/views/settings/projectDebugFiles/customRepositories.spec.tsx
+      description: file name or function name of failing test
+    validations:
+      required: false
+  - type: input
     id: test-run-link
     attributes:
-      label: Link to Test RUN
+      label: Link to Test Run
       placeholder: https://github.com/getsentry/sentry/runs/5582673807
       description: paste the URL to a test run showing the issue
     validations:
