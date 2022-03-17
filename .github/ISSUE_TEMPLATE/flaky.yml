@@ -1,5 +1,5 @@
 name: ❅ Flaky Test
-description: A flaky test in CI
+description: Report a flaky test in CI
 title: "[Flaky CI]: "
 labels: ["Type: CI Flakiness"]
 body:
@@ -41,3 +41,8 @@ body:
       description: paste the URL to a test run showing the issue
     validations:
       required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: If you know anything else, please add it here
